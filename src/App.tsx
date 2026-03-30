@@ -1,6 +1,6 @@
-
 import Nav from './components/navbar/Nav'
-import './App.css'
+import Notif from './components/notification/Notif'
+
 
 function App() {
   
@@ -9,6 +9,7 @@ function App() {
     <div>
       
       <header>
+        <Notif />
         <Nav />
       </header>
       
