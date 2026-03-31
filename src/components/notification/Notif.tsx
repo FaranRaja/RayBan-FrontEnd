@@ -1,32 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const Notif: React.FC = () => {
-  const notifContent: string[] = [
-    "Discover the Ray-Ban RED Community",
-    "Return Within 45 days of Receiving Shipment",
-    "Enjoy Free Standard Shipping on all Orders"
-  ];
 
-  const [index, setIndex] = useState<number>(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % notifContent.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+const Notif = () => {
   return (
-    <div className="bg-black text-white flex items-center justify-between p-4">
-      <p className="mx-auto font-light">
-        {notifContent[index]}
+    
+      <div className=" flex justify-center align-center p-4">
+      <p className="text-center text-sm font-light">
+        Join the Ray-Ban RED Community
       </p>
-      <p className="font-light whitespace-nowrap">
-        Our Services & Eye Exam
-      </p>
+      
     </div>
-  );
-};
+    
+  )
+}
 
-export default Notif;
+export default Notif
+
+
