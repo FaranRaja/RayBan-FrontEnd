@@ -2,7 +2,7 @@ import React from 'react'
 
 const Categories = () => {
   return (
-    <ul className='flex items-center gap-5 font-bold text-white'>
+    <ul className='flex items-center gap-5 font-bold '>
       <li>NEW IN</li>
       <li>SUNGLASSES</li>
       <li>EYEGLASSES</li>
